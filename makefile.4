@@ -1,0 +1,7 @@
+graficas1.x: tbod3.txt graficas1.py
+	python graficas1.py
+
+tbod3.txt: tbod3.x
+	./tbod3.x > tbod3.txt
+tbod3.x : tbod3.c
+	gcc tbod3.c -lm -o tbod3.x
