@@ -1,0 +1,9 @@
+graficas.x: tbodyf.txt graficas.py
+	python graficas.py
+
+
+tbodyf.txt: tbodyf.x
+	./tbodyf.x > tbodyf.txt    
+    
+tbodyf.x : tbodyf.c
+	gcc tbodyf.c -lm -o tbodyf.x
